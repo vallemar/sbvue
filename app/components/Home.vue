@@ -5,20 +5,17 @@
     </ActionBar>
 
     <GridLayout>
-      <Label class="info">
-        <FormattedString>
-          <Span class="fas" text.decode="&#xf135; "/>
-          <Span :text="message"/>
-        </FormattedString>
-      </Label>
+     <Button label="tappp"></Button>
     </GridLayout>
   </Page>
 </template>
 
 <script lang="ts">
   import Vue from "nativescript-vue";
+  import Button from "./Button.vue";
 
   export default Vue.extend({
+    components:{Button},
     computed: {
       message() {
         return "Blank {N}-Vue app";
